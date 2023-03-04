@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Granny Eileen's Digital Cookbook</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cookbook_style.css">
+    <script src="cookbook_repeatableheader.js" type="text/javascript" defer></script>
+    <script src="cookbook_repeatablefooter.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+
+    <header-component></header-component>
+
+    <div class="narrownav">
+        <a href="index.html">About Page</a>
+        <a href="bookmarkedrecipes.html" class="right">Bookmarked Recipes</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <ul>
+                <li><a href="index.html" id="abouttab">About Page</a></li>
+                <li><a href="scones.html">Cheese Scones</a></li>
+                <li><a href="brocollisoup.html">Broccoli Soup</a></li>
+                <li><a href="hasselbackpotatoes.html">Hasselback Potatoes</a></li>
+                <li><a href="bookmarkedrecipes.html" id="bookmarktab">Bookmarked Recipes</a></li>
+                <li><a href="feedbackpage.html" id="feedbacktab">Give Feedback</a></li>
+            </ul>
+        </div>
+
+
+        <div class="main">
+
+            <h2 id="recipeName">Broccoli Soup</h2>
+
+            <div class="metric-recipe">
+    
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>50g butter</li>
+                  <li>1 large chopped onion</li>
+                  <li>460g broccoli, trimmed and chopped</li>
+                  <li>A good pinch of cumin seeds</li>
+                  <li>150g split red lentils</li>
+                  <li>1100ml vegetable stock (2 stock cubes in water)</li>
+                  <li>120g Stilton cheese</li>
+                  <li>Salt and pepper to taste</li>
+                </ul>
+                
+                <h3>Instructions</h3>
+                <ol>
+                  <li>Melt the butter in a large saucepan, add the onion and cook until soft, then the broccoli and cumin and cook for about 5 min.</li><br>
+                  <li>Stir the lentils and the stock into the vegetables. Brink to the boil, then reduce the head, cover and simmer for 20-30 min (until the lentils are soft)</li><br>
+                  <li>Leave the soup to cool slightly, then puree with a hand blender (or in a processor) until smooth.</li><br>
+                  <li>If you have not used a hand blender, return the soup to the saucepain. Reheat gently,. Crumble in the Stilton, season with salt and pepper if desired, and stir until the Stilton has dissolved.</li><br>
+                  <li>If the soup is too thick add a little more water</li><br>
+                </ol>
+                <p>When cold this soup can be frozen</p><br>
+            </div>
+            <img src="https://i.ibb.co/88V86md/Screenshot-2023-02-26-at-17-45-08.png" alt="Screenshot-2023-02-26-at-17-45-08" border="0"><br><br>
+            <div class="interactionbar">
+                <button id="likeBtn" onclick="colourLike()"><i class="fa-solid fa-heart"></i>      Like</button>
+                <button id="commentBtn" onclick="commentFeature()"><i class="fa-solid fa-comments"></i>     Comment</button>
+                <button id="bookmarkBtn" onclick="Bookmark()"><i class="fa-solid fa-bookmark"></i>      Bookmark</button>
+            <br><br></div>
+
+            <div class = "commentsection">
+                <textarea class="textarea" placeholder="Please let us know your thoughts!"></textarea></p>
+                <div class="commentbar">
+                    <button id="commentSubmitBtn"><i class="fa-solid fa-paper-plane"></i>      Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer-component></footer-component>
+
+    <script src="cookbook_script.js"></script>
+
+</body>
+
+</html>

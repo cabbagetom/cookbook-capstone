@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Granny Eileen's Digital Cookbook</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cookbook_style.css">
+    <script src="cookbook_repeatableheader.js" type="text/javascript" defer></script>
+    <script src="cookbook_repeatablefooter.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+
+    <header-component></header-component>
+
+    <div class="narrownav">
+        <a href="index.html">About Page</a>
+        <a href="bookmarkedrecipes.html" class="right">Bookmarked Recipes</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <ul>
+                <li><a href="index.html" id="abouttab">About Page</a></li>
+                <li><a href="scones.html">Cheese Scones</a></li>
+                <li><a href="brocollisoup.html">Broccoli Soup</a></li>
+                <li><a href="hasselbackpotatoes.html">Hasselback Potatoes</a></li>
+                <li><a href="bookmarkedrecipes.html" id="bookmarktab">Bookmarked Recipes</a></li>
+                <li><a href="feedbackpage.html" id="feedbacktab">Give Feedback</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+
+            <h2 id="recipeName">Hasselback Potatoes</h2>
+
+            <div class="metric-recipe">
+    
+	<h3>Ingredients:</h3>
+	<ul>
+		<li>6 Medium Size Potatoes</li>
+		<li>2-3 Cloves of Garlic, thinly sliced</li>
+		<li>2 tbs Groundnut or Olive Oil</li>
+		<li>30g Butter</li>
+		<li>6 Bay Leaves (as a garnish)</li>
+		<li>Salt &amp; Pepper</li>
+	</ul>
+	<h3>Instructions:</h3>
+    <ol>
+	<li>Preheat the oven to 200-220&deg;C.</li><br>
+	<li>Cut a sliver off the bottom of each potato, so that they sit flat.</li><br>
+	<li>Push a metal skewer through each potato in turn, about 1 cm from the base.</li><br>
+	<li>Starting from one end of the potato, cut through to the skewer at about 3mm intervals.</li><br>
+	<li>Insert a sliver of garlic in each slit. Slip a bay leaf into each potato.</li><br>
+	<li>Arrange the potatoes on an oiled baking tray, melt the butter, mix with the oil and paint over each potato. Sprinkle with salt and pepper.</li><br>
+	<li>Roast for 45-50 minutes until the potatoes are golden-brown and the insides are soft. Baste at least twice during the baking.</li><br>
+    </ol>
+	<p><strong>NOTE 1:</strong> Usually the potatoes are unpeeled, but, for variety, can be peeled, and sprinkled with bread crumbs or grated cheese towards the end of the baking process.</p>
+	<p><strong>NOTE 2:</strong> The slivers of garlic help keep the slices apart. Small slivers of lemon peel can be used as an alternative, and lemon juice can be sprinkled over the potatoes during baking.</p>
+	<p><em>Eileen + David, January 2010</em></p>
+            </div>
+            <img src="https://i.ibb.co/sqnJyhD/Screenshot-2023-02-26-at-17-55-01.png" alt="Screenshot-2023-02-26-at-17-55-01" border="0"><br><br>
+            <div class="interactionbar">
+                <button id="likeBtn" onclick="colourLike()"><i class="fa-solid fa-heart"></i>      Like</button>
+                <button id="commentBtn" onclick="commentFeature()"><i class="fa-solid fa-comments"></i>     Comment</button>
+                <button id="bookmarkBtn" onclick="Bookmark()"><i class="fa-solid fa-bookmark"></i>      Bookmark</button>
+            <br><br></div>
+
+            <div class = "commentsection">
+                <textarea class="textarea" placeholder="Please let us know your thoughts!"></textarea></p>
+                <div class="commentbar">
+                    <button id="commentSubmitBtn"><i class="fa-solid fa-paper-plane"></i>      Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer-component></footer-component>
+
+    <script src="cookbook_script.js"></script>
+
+</body>
+
+</html>

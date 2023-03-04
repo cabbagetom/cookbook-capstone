@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Granny Eileen's Digital Cookbook</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cookbook_style.css">
+    <script src="cookbook_repeatableheader.js" type="text/javascript" defer></script>
+    <script src="cookbook_repeatablefooter.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+
+    <header-component></header-component>
+
+    <div class="narrownav">
+        <a href="index.html">About Page</a>
+        <a href="bookmarkedrecipes.html" class="right">Bookmarked Recipes</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <ul>
+                <li><a href="index.html" id="abouttab">About Page</a></li>
+                <li><a href="scones.html">Cheese Scones</a></li>
+                <li><a href="brocollisoup.html">Broccoli Soup</a></li>
+                <li><a href="hasselbackpotatoes.html">Hasselback Potatoes</a></li>
+                <li><a href="bookmarkedrecipes.html" id="bookmarktab">Bookmarked Recipes</a></li>
+                <li><a href="feedbackpage.html" id="feedbacktab">Give Feedback</a></li>
+            </ul>
+        </div>
+
+
+        <div class="main">
+
+            <div class="imperialmetrictoggle">
+                <button id="imperialBtn"><i class="fa-solid fa-scale-unbalanced-flip"></i>      Imperial Measures</button>
+                <button id="metricBtn"><i class="fa-solid fa-ruler-horizontal"></i>      Metric Measures</button>
+            </div>
+
+            <h2 id="recipeName">Cheese Scones</h2>
+            <div class="imperial-recipe">
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>8oz plain flour</li>
+                  <li>2oz butter</li>
+                  <li>1 tbsp baking powder</li>
+                  <li>1/4 tsp salt</li>
+                  <li>6oz grated cheese <em>(comment from granny: I usually use Red Leicester)</em></li>
+                  <li>Milk for making dough, and glazing</li>
+                </ul>
+                
+                <h3>Instructions</h3>
+                <ol>
+                  <li>Rub the butter into the flour, add the baking powder, salt and cheese.</li><br>
+                  <li>Mix to a soft dough with milk.</li><br>
+                  <li>Roll out to about 1" thick, and cut into 2" triangles or circles.</li><br>
+                  <li>Put on a greased baking tray and brush with milk. Sprinkle tops with a little grated cheese</li><br>
+                  <li>Bake at 400 degrees farenheit for 10-15 minutes until golden brown</li><br>
+                </ol>
+            </div>
+
+            <div class="metric-recipe">
+    
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>200g plain flour</li>
+                  <li>55g butter</li>
+                  <li>15g baking powder</li>
+                  <li>1.5g salt</li>
+                  <li>170g grated cheese <em>(comment from granny: I usually use Red Leicester)</em></li>
+                  <li>Milk for making dough, and glazing</li>
+                </ul>
+                
+                <h3>Instructions</h3>
+                <ol>
+                  <li>Rub the butter into the flour, add the baking powder, salt and cheese.</li><br>
+                  <li>Mix to a soft dough with milk.</li><br>
+                  <li>Roll out to about 2.5cm thick, and cut into 5cm triangles or circles.</li><br>
+                  <li>Put on a greased baking tray and brush with milk. Sprinkle tops with a little grated cheese</li><br>
+                  <li>Bake at 200 degrees centigrade for 10-15 minutes until golden brown</li><br>
+                </ol>
+            </div>
+            <img src="https://i.ibb.co/ZB1RhYh/Screenshot-2023-02-26-at-16-37-10.png" alt="Screenshot-2023-02-26-at-16-37-10" border="0"><br><br>
+            <div class="interactionbar">
+                <button id="likeBtn" onclick="colourLike()"><i class="fa-solid fa-heart"></i>      Like</button>
+                <button id="commentBtn" onclick="commentFeature()"><i class="fa-solid fa-comments"></i>     Comment</button>
+                <button id="bookmarkBtn" onclick="Bookmark()"><i class="fa-solid fa-bookmark"></i>      Bookmark</button>
+            <br><br></div>
+
+            <div class = "commentsection">
+                <textarea class="textarea" placeholder="Please let us know your thoughts!"></textarea></p>
+                <div class="commentbar">
+                    <button id="commentSubmitBtn"><i class="fa-solid fa-paper-plane"></i>      Submit</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer-component></footer-component>
+
+    <script src="cookbook_script.js"></script>
+
+</body>
+
+</html>

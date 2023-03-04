@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Granny Eileen's Digital Cookbook</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cookbook_style.css">
+    <script src="cookbook_repeatableheader.js" type="text/javascript" defer></script>
+    <script src="cookbook_repeatablefooter.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+
+    <header-component></header-component>
+
+    <div class="narrownav">
+        <a href="#">About</a>
+        <a href="#" class="right">Recipe Index</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <ul>
+                <li><a href="#">About Page</a></li>
+                <li><a href="#">Recipe 1</a></li>
+                <li><a href="#">Recipe 2</a></li>
+                <li><a href="#">Recipe 3</a></li>
+                <li><a href="#" class="signup">Sign Up</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+
+            <div class="imperialmetrictoggle">
+                <button id="imperialBtn"><i class="fa-solid fa-scale-unbalanced-flip"></i>      Imperial Measures</button>
+                <button id="metricBtn"><i class="fa-solid fa-ruler-horizontal"></i>      Metric Measures</button>
+            </div>
+
+            <h2>Spicy Chili Recipe</h2>
+            <div class="imperial-recipe">
+                <!-- Imperial recipe text here -->
+                IMPERIAL RECIPE
+            </div>
+
+            <div class="metric-recipe">
+    
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>1 pound ground beef</li>
+                  <li>1 onion, chopped</li>
+                  <li>3 cloves garlic, minced</li>
+                  <li>2 bell peppers, chopped</li>
+                  <li>2 cans diced tomatoes</li>
+                  <li>1 can kidney beans, drained and rinsed</li>
+                  <li>1 tablespoon chili powder</li>
+                  <li>1 teaspoon cumin</li>
+                  <li>1/2 teaspoon salt</li>
+                  <li>1/4 teaspoon cayenne pepper</li>
+                </ul>
+                
+                <h3>Instructions</h3>
+                <ol>
+                  <li>Heat a large pot over medium-high heat. Add the ground beef and cook until browned, breaking it up into small pieces with a wooden spoon.</li>
+                  <li>Add the onion, garlic, and bell peppers to the pot and cook until softened, about 5 minutes.</li>
+                  <li>Add the diced tomatoes, kidney beans, chili powder, cumin, salt, and cayenne pepper to the pot. Stir to combine.</li>
+                  <li>Bring the chili to a simmer and let cook for 20-30 minutes, stirring occasionally, until the flavors have melded together.</li>
+                  <li>Serve hot with your favorite toppings, such as shredded cheese, sour cream, and green onions.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer-component></footer-component>
+
+    <script src="cookbook_script.js"></script>
+
+</body>
+
+</html>

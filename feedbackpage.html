@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Granny Eileen's Digital Cookbook</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cookbook_style.css">
+    <script src="cookbook_repeatableheader.js" type="text/javascript" defer></script>
+    <script src="cookbook_repeatablefooter.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+
+    <header-component></header-component>
+
+    <div class="narrownav">
+        <a href="index.html">About Page</a>
+        <a href="bookmarkedrecipes.html" class="right">Bookmarked Recipes</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <ul>
+                <li><a href="index.html" id="abouttab">About Page</a></li>
+                <li><a href="scones.html">Cheese Scones</a></li>
+                <li><a href="brocollisoup.html">Broccoli Soup</a></li>
+                <li><a href="hasselbackpotatoes.html">Hasselback Potatoes</a></li>
+                <li><a href="bookmarkedrecipes.html" id="bookmarktab">Bookmarked Recipes</a></li>
+                <li><a href="feedbackpage.html" id="feedbacktab">Give Feedback</a></li>
+            </ul>
+        </div>
+
+
+        <div class="main">
+
+            <h2>Feedback Form</h2>
+
+            <p>With every dish that we prepare,<br>
+                We hope to offer something rare.<br>
+                But we cannot improve alone,<br>
+                Feedback is the chef's cornerstone.</p>
+                
+                <p>So share with us your honest views,<br>
+                And help us create better stews.<br>
+                With every comment, we'll refine,<br>
+                Our cooking skills will surely shine.<br></p>
+                
+         
+            <div class = "feedbacksection">
+                <textarea class="textarea" placeholder="Please let us know your thoughts!"></textarea></p>
+                <div class="feedbackbar">
+                    <button id="feedbackSubmitBtn"><i class="fa-solid fa-paper-plane"></i>      Submit</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer-component></footer-component>
+
+    <script src="cookbook_script.js"></script>
+
+</body>
+
+</html>
