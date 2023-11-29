@@ -1,5 +1,7 @@
 # Digital Cookbook Capstone
 
+### Created February 2023
+
 This is a digital cookbook project created as a tribute to my grandmother's recipes. The site allows users to:
 * browse through recipes
 * bookmark recipes they like
